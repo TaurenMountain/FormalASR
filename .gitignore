@@ -1,0 +1,9 @@
+checkpoints/
+data/
+eval_results/
+web_demo/
+paper/
+tmp/
+__pycache__/
+*.py[cod]
+opensource/
