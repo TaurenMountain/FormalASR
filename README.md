@@ -1,6 +1,7 @@
 # FormalASR: End-to-End Spoken Chinese to Formal Text
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2605.19266"><img src="https://img.shields.io/badge/arXiv-2605.19266-b31b1b.svg" /></a>
   <a href="https://huggingface.co/TaurenMountain/FormalASR-0.6B"><img src="https://img.shields.io/badge/🤗 FormalASR--0.6B-Model-yellow" /></a>
   <a href="https://huggingface.co/TaurenMountain/FormalASR-1.7B"><img src="https://img.shields.io/badge/🤗 FormalASR--1.7B-Model-yellow" /></a>
   <a href="https://huggingface.co/datasets/TaurenMountain/WenetSpeech-Formal"><img src="https://img.shields.io/badge/🤗 WenetSpeech--Formal-Dataset-orange" /></a>
@@ -21,7 +22,7 @@
 ## 🔥 新闻
 
 - **2026-05**: 发布 FormalASR-0.6B、FormalASR-1.7B 模型及 WenetSpeech-Formal、Speechio-Formal 数据集！
-- **2026-05**: 论文 [*FormalASR: End-to-End Spoken Chinese to Formal Text*](https://arxiv.org/abs/2026.XXXXX) 上传 arXiv。
+- **2026-05**: 论文 [*FormalASR: End-to-End Spoken Chinese to Formal Text*](https://arxiv.org/abs/2605.19266) 上传 arXiv。
 
 ---
 
@@ -29,7 +30,7 @@
 
 ASR 系统通常针对逐字转写进行优化，保留了口语中的填充词、重复和非正式句式，不适合文档生成等下游应用。常见的两阶段 ASR+LLM 方案会带来延迟和内存开销，难以在设备端部署。
 
-本文提出 **FormalASR**，两个紧凑型端到端模型（0.6B 和 1.7B），直接将普通话语音转写为规范书面文本。为此，我们构建了 **WenetSpeech-Formal**（969K 训练样本）和 **Speechio-Formal**（43K 跨域测试样本）两个大规模书面体 ASR 数据集，通过 LLM 改写和质量过滤生成。在 WenetSpeech 和 Speechio 上的实验表明，FormalASR 在 CER、ROUGE-L 和 BERTScore 上均显著优于逐字转写基线。完整论文见 [arXiv](https://arxiv.org/abs/2026.XXXXX)。
+本文提出 **FormalASR**，两个紧凑型端到端模型（0.6B 和 1.7B），直接将普通话语音转写为规范书面文本。为此，我们构建了 **WenetSpeech-Formal**（969K 训练样本）和 **Speechio-Formal**（43K 跨域测试样本）两个大规模书面体 ASR 数据集，通过 LLM 改写和质量过滤生成。在 WenetSpeech 和 Speechio 上的实验表明，FormalASR 在 CER、ROUGE-L 和 BERTScore 上均显著优于逐字转写基线。完整论文见 [arXiv](https://arxiv.org/abs/2605.19266)。
 
 ---
 
@@ -240,12 +241,14 @@ FormalASR/
 如果本项目对你的研究有帮助，请引用：
 
 ```bibtex
-@article{ning2026formalasr,
-  title   = {FormalASR: End-to-End Spoken Chinese to Formal Text},
-  author  = {Ning, Wanyi and Guo, Yinshang and Qian, Haitao and Cheng, Jiyuan and Feng, Weiyuan and Zhang, Yufei},
-  journal = {arXiv preprint arXiv:2026.XXXXX},
-  year    = {2026},
-  url     = {https://arxiv.org/abs/2026.XXXXX}
+@misc{ning2026formalasrendtoendspokenchinese,
+      title={FormalASR: End-to-End Spoken Chinese to Formal Text}, 
+      author={Wanyi Ning and Yinshang Guo and Haitao Qian and Jiyuan Cheng and Weiyuan Feng and Yufei Zhang},
+      year={2026},
+      eprint={2605.19266},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.19266}, 
 }
 ```
 
