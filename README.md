@@ -257,7 +257,7 @@ FormalASR/
 ## 🙏 致谢
 
 - 基础模型：[Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B)
-- 训练数据来源：[WenetSpeech](https://huggingface.co/datasets/speechcolab/gigaspeech)、[Speechio](https://github.com/SpeechColab/Leaderboard)
+- 训练数据来源：[WenetSpeech](https://huggingface.co/datasets/zxsddcs/wenetspeech)、[Speechio](https://github.com/SpeechColab/Leaderboard)
 - LLM 书面化改写：[DeepSeek-V3.2](https://www.deepseek.com/)
 
 ---
