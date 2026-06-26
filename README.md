@@ -243,7 +243,7 @@ FormalASR/
 ```bibtex
 @misc{ning2026formalasrendtoendspokenchinese,
       title={FormalASR: End-to-End Spoken Chinese to Formal Text}, 
-      author={Wanyi Ning and Yinshang Guo and Haitao Qian and Jiyuan Cheng and Weiyuan Feng and Yufei Zhang},
+      author={Wanyi Ning and Yinshang Guo and Haitao Qian and Jiyuan Cheng and Wei Zhou and Weiyuan Feng and Yufei Zhang},
       year={2026},
       eprint={2605.19266},
       archivePrefix={arXiv},
