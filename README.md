@@ -21,6 +21,7 @@
 
 ## 🔥 新闻
 
+- **2026-09**: 论文被 SLT 2026 Demo Track 接收！
 - **2026-05**: 发布 FormalASR-0.6B、FormalASR-1.7B 模型及 WenetSpeech-Formal、Speechio-Formal 数据集！
 - **2026-05**: 论文 [*FormalASR: End-to-End Spoken Chinese to Formal Text*](https://arxiv.org/abs/2605.19266) 上传 arXiv。
 
