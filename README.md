@@ -31,7 +31,7 @@
 
 ASR 系统通常针对逐字转写进行优化，保留了口语中的填充词、重复和非正式句式，不适合文档生成等下游应用。常见的两阶段 ASR+LLM 方案会带来延迟和内存开销，难以在设备端部署。
 
-本文提出 **FormalASR**，两个紧凑型端到端模型（0.6B 和 1.7B），直接将普通话语音转写为规范书面文本。为此，我们构建了 **WenetSpeech-Formal**（969K 训练样本）和 **Speechio-Formal**（43K 跨域测试样本）两个大规模书面体 ASR 数据集，通过 LLM 改写和质量过滤生成。在 WenetSpeech 和 Speechio 上的实验表明，FormalASR 在 CER、ROUGE-L 和 BERTScore 上均显著优于逐字转写基线。完整论文见 [arXiv](https://arxiv.org/abs/2605.19266)。
+本文提出 **FormalASR**，两个紧凑型端到端模型（0.6B 和 1.7B），直接将普通话语音转写为规范书面文本。为此，我们构建了 **WenetSpeech-Formal**（969K 训练样本）和 **Speechio-Formal**（41K 跨域测试样本）两个大规模书面体 ASR 数据集，通过 LLM 改写和质量过滤生成。在 WenetSpeech 和 Speechio 上的实验表明，FormalASR 在 CER、ROUGE-L 和 BERTScore 上均显著优于逐字转写基线。完整论文见 [arXiv](https://arxiv.org/abs/2605.19266)。
 
 ---
 
@@ -41,7 +41,7 @@ ASR 系统通常针对逐字转写进行优化，保留了口语中的填充词�
 |--------|--------|----------|----------|------|-------------|
 | **WenetSpeech-Formal** (train) | 969,201 | WenetSpeech | DeepSeek-V3.2 书面化改写 | SFT 训练 | [🤗 TaurenMountain/WenetSpeech-Formal](https://huggingface.co/datasets/TaurenMountain/WenetSpeech-Formal) |
 | **WenetSpeech-Formal** (test) | 31,932 | WenetSpeech | DeepSeek-V3.2 书面化改写 | 域内评估 | 同上 |
-| **Speechio-Formal** (test) | 43,178 | Speechio (ZH00000–ZH00026) | DeepSeek-V3.2 书面化改写 | 跨域评估 | [🤗 TaurenMountain/Speechio-Formal](https://huggingface.co/datasets/TaurenMountain/Speechio-Formal) |
+| **Speechio-Formal** (test) | 41,893 | Speechio (ZH00000–ZH00026) | DeepSeek-V3.2 书面化改写 | 跨域评估 | [🤗 TaurenMountain/Speechio-Formal](https://huggingface.co/datasets/TaurenMountain/Speechio-Formal) |
 
 ### 数据构建流程
 
